@@ -1,1 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+    background: linear-gradient(#87CEEB, #FFB6C1);
+    /* You can adjust the colors and direction as needed */
+    /* #87CEEB = Light Sky Blue */
+    /* #FFB6C1 = Light Pink */
+    margin: 0; /* Remove default margin */
+    font-family: Arial, sans-serif; /* Optional: Sets a clean font */
+}

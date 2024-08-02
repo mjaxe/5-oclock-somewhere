@@ -1,1 +1,9 @@
-<p>five-oclock-somewhere works!</p>
+<section class="container">
+    <div *ngFor="let zone of fivePmZones">
+        <div class="place">
+            <p *ngIf="zone.city !== null">{{ zone.city }}, </p>
+            <p *ngIf="zone.state !== null">{{ zone.state }}, </p>
+            <p class="country">{{ zone.country }}</p>
+        </div>
+    </div>
+</section>

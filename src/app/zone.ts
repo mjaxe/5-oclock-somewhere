@@ -1,8 +1,10 @@
 export class Zone {
 
     constructor(
-        public zone: String,
-        public country: String
+        public zone: string,
+        public country: String,
+        public state: String | null,
+        public city: String
     ){}
 
 
