@@ -1,7 +1,30 @@
 .place > p{
-    display: inline
+    display: inline;
 }
 
-.country {
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 800px; /* Optional: to control the width of the section */
+    margin: 0 auto; /* Center the container horizontally */
+  }
+  
+  .left-button, .right-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .place {
+    text-align: center;
+    flex-grow: 1; /* Make the place div take up the remaining space */
+  }
+  
+  .country {
     font-weight: bold;
-}
+  }

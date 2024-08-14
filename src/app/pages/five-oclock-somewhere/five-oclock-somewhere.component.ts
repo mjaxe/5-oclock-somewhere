@@ -10,6 +10,7 @@ import { ZoneService } from '../../zone.service';
 export class FiveOclockSomewhereComponent implements OnInit {
   zones: Zone[] = [];
   fivePmZones: Zone[] = [];
+  currentIndex: number = 0;
 
   constructor(private zoneService: ZoneService) {}
 
@@ -36,5 +37,21 @@ export class FiveOclockSomewhereComponent implements OnInit {
     };
     const hour = new Intl.DateTimeFormat('en-US', options).format(date);
     return hour === '17';
+  }
+
+  showPrevious(){
+    if (this.currentIndex > 0) {
+      this.currentIndex--;
+    } else {
+      this.currentIndex = this.fivePmZones.length - 1;
+    }
+  }
+
+  showNext(){
+    if (this.currentIndex < this.fivePmZones.length - 1) {
+      this.currentIndex++;
+    } else {
+      this.currentIndex = 0;
+    }
   }
 }

@@ -1,9 +1,9 @@
 <section class="container">
-    <div *ngFor="let zone of fivePmZones">
-        <div class="place">
-            <p *ngIf="zone.city !== null">{{ zone.city }}, </p>
-            <p *ngIf="zone.state !== null">{{ zone.state }}, </p>
-            <p class="country">{{ zone.country }}</p>
-        </div>
-    </div>
+    <button (click)="showPrevious()">Left</button>
+    <div class="place" *ngIf="fivePmZones.length > 0">
+        <p *ngIf="fivePmZones[currentIndex].city !== null">{{ fivePmZones[currentIndex].city }}, </p>
+        <p *ngIf="fivePmZones[currentIndex].state !== null">{{ fivePmZones[currentIndex].state }}, </p>
+        <p class="country">{{ fivePmZones[currentIndex].country }}</p>
+      </div>
+    <button (click)="showNext()">Right</button>
 </section>

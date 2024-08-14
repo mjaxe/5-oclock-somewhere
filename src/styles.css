@@ -6,4 +6,15 @@ body {
     /* #FFB6C1 = Light Pink */
     margin: 0; /* Remove default margin */
     font-family: Arial, sans-serif; /* Optional: Sets a clean font */
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden; /* Prevents scrolling */
+  }
