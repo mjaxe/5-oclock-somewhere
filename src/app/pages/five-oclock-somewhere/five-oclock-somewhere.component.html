@@ -1,4 +1,4 @@
-<section class="container">
+<!-- <section class="container">
     <button (click)="showPrevious()">Left</button>
     <div class="place" *ngIf="fivePmZones.length > 0">
         <p *ngIf="fivePmZones[currentIndex].city !== null">{{ fivePmZones[currentIndex].city }}, </p>
@@ -6,4 +6,21 @@
         <p class="country">{{ fivePmZones[currentIndex].country }}</p>
       </div>
     <button (click)="showNext()">Right</button>
-</section>
+</section> -->
+<div>
+  <mat-card appearance='raised' style="margin: 0 auto;max-width: 40%; background-color: rgb(255, 234, 234);">
+    <mat-card-header>
+      Insert Country
+    </mat-card-header>
+    <img>
+    <mat-card-content>
+      <p>
+        write some cool stuff about the country
+      </p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button>Basic</button>
+      <button mat-button>Basic</button>
+    </mat-card-actions>
+  </mat-card>
+</div>
