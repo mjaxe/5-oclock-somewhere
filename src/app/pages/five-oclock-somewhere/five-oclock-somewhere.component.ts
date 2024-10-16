@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Zone } from '../../zone';
-import { ZoneService } from '../../zone.service';
+import { Zone } from '../../models/zone';
+import { ZoneService } from '../../services/zone.service';
 
 @Component({
   selector: 'app-five-oclock-somewhere',

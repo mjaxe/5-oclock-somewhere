@@ -6,10 +6,12 @@ import { AppComponent } from './app.component';
 import { FiveOclockSomewhereComponent } from './pages/five-oclock-somewhere/five-oclock-somewhere.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import {MatButtonModule} from '@angular/material/button';
+import { PageTitleComponent } from './components/page-title/page-title.component';
 @NgModule({
   declarations: [
     AppComponent,
-    FiveOclockSomewhereComponent
+    FiveOclockSomewhereComponent,
+    PageTitleComponent
   ],
   imports: [
     BrowserModule,
